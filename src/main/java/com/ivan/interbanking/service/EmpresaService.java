@@ -10,6 +10,7 @@ import jakarta.inject.Inject;
 import jakarta.ws.rs.BadRequestException;
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -37,6 +38,7 @@ public class EmpresaService
 	{
 		validarCuit(empresaDTO.getCuit());
 		EmpresaEntity empresaEntity = new EmpresaEntity(empresaDTO);
+		empresaEntity.fechaAdhesion = LocalDate.now();
 		empresaRespository.persist(empresaEntity);
 	}
 
