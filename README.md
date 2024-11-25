@@ -20,6 +20,8 @@ Al levantarse la aplicación se debería ver lo siguiente en la terminal de su s
 
 ![App levantada](https://github.com/user-attachments/assets/9b1b713f-1be0-4875-8d36-719ecbea6264)
 
+#### Se recomienda testear el endpoint mediante la ui de swagger o mediante aplicaciones como 'Postman'
+
 ## Swagger
 Se documentó la aplicación utilizando swagger.
 
